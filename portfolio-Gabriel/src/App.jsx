@@ -101,7 +101,7 @@ function App() {
               <li><a href="#contact" onClick={() => scrollToSection('contact')} className={activeSection === 'contact' ? 'active' : ''}>Contacto</a></li>
             </ul>
           </nav>
-          <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className={`menu-toggle ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <span></span>
             <span></span>
             <span></span>
@@ -112,19 +112,6 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="hero section">
         <div className="container">
-          <div className="hero-content fade-in-up">
-            <h1 className="hero-title">Gabriel Acosta</h1>
-            <h2 className="hero-subtitle">Desarrollador Backend & Inteligencia Artificial</h2>
-            <p className="hero-description">
-              Desarrollador de Software Backend con formación como Técnico Superior en Desarrollo de Software Multiplataforma, 
-              enfocado en la creación de soluciones eficientes, escalables y de alto rendimiento con especialización en 
-              Machine Learning e Inteligencia Artificial.
-            </p>
-            <div className="hero-buttons">
-              <button className="btn" onClick={() => scrollToSection('projects')}>Ver Proyectos</button>
-              <button className="btn btn-outline" onClick={() => scrollToSection('contact')}>Contactar</button>
-            </div>
-          </div>
           <div className="hero-visual">
             <div className="code-animation">
               <div className="code-line">const developer = &#123;</div>
@@ -135,6 +122,28 @@ function App() {
               <div className="code-line">&#125;</div>
             </div>
           </div>
+          <div className="hero-content fade-in-up">
+            <h1 className="hero-title">Gabriel Acosta</h1>
+            <h2 className="hero-subtitle">Desarrollador Backend & Inteligencia Artificial</h2>
+            <p className="hero-description">
+              Desarrollador de Software Backend con formación como Técnico Superior en Desarrollo de Software Multiplataforma, 
+              enfocado en la creación de soluciones eficientes, escalables y de alto rendimiento con especialización en 
+              Machine Learning e Inteligencia Artificial.
+            </p>
+            <div className="hero-buttons">
+              <button className="btn" onClick={() => scrollToSection('projects')}>
+                <span className="btn-text">Ver Proyectos</span>
+              </button>
+              <button className="btn btn-outline" onClick={() => scrollToSection('contact')}>
+                <span className="btn-text">Contactar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="hero-decoration">
+          <div className="hero-dot"></div>
+          <div className="hero-dot"></div>
+          <div className="hero-dot"></div>
         </div>
       </section>
 
