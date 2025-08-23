@@ -192,9 +192,51 @@ a:hover {
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
+    width: 100%;
   }
   
   .section {
     padding: 60px 0;
+  }
+  
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .app {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .main-content {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .section {
+    padding: 40px 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 0.95rem;
   }
 }
