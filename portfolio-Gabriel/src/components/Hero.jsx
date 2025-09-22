@@ -35,10 +35,16 @@ function Hero() {
       observer.observe(codeElement);
     }
 
+    // Fallback: hacer visible después de 2 segundos si no se ha detectado
+    const fallbackTimer = setTimeout(() => {
+      setIsVisible(true);
+    }, 2000);
+
     return () => {
       if (codeElement) {
         observer.unobserve(codeElement);
       }
+      clearTimeout(fallbackTimer);
     };
   }, []);
 
@@ -48,7 +54,7 @@ function Hero() {
       <div className="container">
         <div className={`hero-content ${isVisible ? 'fade-in' : ''}`}>
           <h1 className="hero-title">Gabriel Acosta</h1>
-          <h2 className="hero-subtitle">Desarrollador Full Stack</h2>
+          <h2 className="hero-subtitle">AI Developer</h2>
           <p className="hero-description">
             Especializado en crear soluciones tecnológicas innovadoras con enfoque en experiencias de usuario excepcionales.
           </p>
@@ -62,7 +68,7 @@ function Hero() {
           </div>
         </div>
         
-        <div className={`hero-visual ${isVisible ? 'fade-in-up' : ''}`}>
+        <div className={`hero-visual ${isVisible ? 'fade-in-up' : 'fade-in-up'}`}>
           <div className="code-animation" ref={codeRef} aria-hidden="true">
             <div className="code-header">
               <span className="code-dot"></span>
@@ -73,8 +79,8 @@ function Hero() {
             <div className="code-content">
               <div className="code-line">const <span className="code-keyword">developer</span> = {`{`}</div>
               <div className="code-line">  <span className="code-property">name</span>: <span className="code-string">"Gabriel Acosta"</span>,</div>
-              <div className="code-line">  <span className="code-property">role</span>: <span className="code-string">"Full Stack Developer"</span>,</div>
-              <div className="code-line">  <span className="code-property">skills</span>: [<span className="code-string">"TypeScript"</span>, <span className="code-string">"React"</span>, <span className="code-string">"Node.js"</span>, <span className="code-string">"Python"</span>],</div>
+              <div className="code-line">  <span className="code-property">role</span>: <span className="code-string">"AI Developer"</span>,</div>
+              <div className="code-line">  <span className="code-property">skills</span>: [<span className="code-string">"TypeScript"</span>, <span className="code-string">"React"</span>, <span className="code-string">"Node.js"</span>, <span className="code-string">"Python"</span>,<span className="code-string">"GO"</span>],</div>
               <div className="code-line">  <span className="code-property">passion</span>: <span className="code-string">"Building innovative solutions"</span></div>
               <div className="code-line">{`}`};</div>
             </div>

@@ -49,101 +49,237 @@ export const projects = [
   },
 ];
 
+// Import React Icons
+import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3, FaJs, FaGitAlt } from 'react-icons/fa';
+import {
+  SiTypescript,
+  SiFastapi,
+  SiMongodb,
+  SiPostgresql,
+  SiDjango,
+  SiDocker,
+  SiLangchain,
+  SiTensorflow,
+  SiPytorch,
+  SiGo,
+  SiOllama,
+  SiHuggingface,
+  SiScikitlearn,
+  SiKeras,
+  SiExpress,
+  SiNestjs,
+  SiVite,
+  SiNextdotjs,
+  SiReact,
+} from "react-icons/si";
+import { GiArtificialIntelligence } from 'react-icons/gi';
+
 export const technologies = [
+  // Frontend Technologies
   {
-    name: "React",
-    icon: "⚛️",
-    level: 70,
-    levelText: "Intermedio",
+    name: "HTML5",
+    icon: FaHtml5,
+    level: 90,
+    levelText: "Avanzado",
+    category: "frontend"
   },
   {
-    name: "Node.js",
-    icon: "🟢",
+    name: "CSS3",
+    icon: FaCss3,
     level: 85,
     levelText: "Avanzado",
+    category: "frontend"
+  },
+  {
+    name: "JavaScript",
+    icon: FaJs,
+    level: 85,
+    levelText: "Avanzado",
+    category: "frontend"
   },
   {
     name: "TypeScript",
-    icon: "📘",
+    icon: SiTypescript,
     level: 80,
     levelText: "Avanzado",
+    category: "frontend"
   },
   {
-    name: "Python",
-    icon: "🐍",
+    name: "React",
+    icon: FaReact,
     level: 85,
     levelText: "Avanzado",
+    category: "frontend"
   },
   {
-    name: "FastAPI",
-    icon: "⚡",
-    level: 80,
-    levelText: "Avanzado",
-  },
-  {
-    name: "MongoDB",
-    icon: "🍃",
-    level: 80,
-    levelText: "Avanzado",
-  },
-  {
-    name: "PostgreSQL",
-    icon: "🐘",
-    level: 75,
-    levelText: "Intermedio",
-  },
-  {
-    name: "Docker",
-    icon: "🐳",
-    level: 70,
-    levelText: "Intermedio",
-  },
-  {
-    name: "TensorFlow",
-    icon: "🧠",
+    name: "Next.js",
+    icon: SiNextdotjs,
     level: 75,
     levelText: "Intermedio-Avanzado",
+    category: "frontend"
   },
   {
-    name: "PyTorch",
-    icon: "🔥",
-    level: 70,
-    levelText: "Intermedio",
-  },
-  {
-    name: "Machine Learning",
-    icon: "📊",
+    name: "Vite.js",
+    icon: SiVite,
     level: 80,
-    levelText: "Intermedio",
-  },
-  {
-    name: "Deep Learning",
-    icon: "🧪",
-    level: 75,
-    levelText: "Intermedio",
-  },
-  {
-    name: "NLP",
-    icon: "📝",
-    level: 75,
-    levelText: "Intermedio",
-  },
-  {
-    name: "Agentes de IA",
-    icon: "🤖",
-    level: 70,
-    levelText: "Intermedio",
+    levelText: "Avanzado",
+    category: "frontend"
   },
   {
     name: "React Native",
-    icon: "📱",
-    level: 75,
-    levelText: "Intermedio",
-  },
-  {
-    name: "N8N",
-    icon: "🔗",
+    icon: SiReact,
     level: 70,
     levelText: "Intermedio",
+    category: "frontend"
+  },
+
+  // Backend Technologies
+  {
+    name: "Node.js",
+    icon: FaNodeJs,
+    level: 85,
+    levelText: "Avanzado",
+    category: "backend"
+  },
+  {
+    name: "Python",
+    icon: FaPython,
+    level: 90,
+    levelText: "Avanzado",
+    category: "backend"
+  },
+  {
+    name: "Go",
+    icon: SiGo,
+    level: 75,
+    levelText: "Intermedio-Avanzado",
+    category: "backend"
+  },
+  {
+    name: "Express.js",
+    icon: SiExpress,
+    level: 85,
+    levelText: "Avanzado",
+    category: "backend"
+  },
+  {
+    name: "Nest.js",
+    icon: SiNestjs,
+    level: 70,
+    levelText: "Intermedio",
+    category: "backend"
+  },
+  {
+    name: "FastAPI",
+    icon: SiFastapi,
+    level: 85,
+    levelText: "Avanzado",
+    category: "backend"
+  },
+  {
+    name: "Django",
+    icon: SiDjango,
+    level: 80,
+    levelText: "Avanzado",
+    category: "backend"
+  },
+
+  // Databases
+  {
+    name: "MongoDB",
+    icon: SiMongodb,
+    level: 80,
+    levelText: "Avanzado",
+    category: "database"
+  },
+  {
+    name: "PostgreSQL",
+    icon: SiPostgresql,
+    level: 85,
+    levelText: "Avanzado",
+    category: "database"
+  },
+  {
+    name: "ChromaDB",
+    icon: SiHuggingface,
+    level: 75,
+    levelText: "Intermedio-Avanzado",
+    category: "database"
+  },
+
+  // DevOps & Tools
+  {
+    name: "Docker",
+    icon: SiDocker,
+    level: 80,
+    levelText: "Avanzado",
+    category: "devops"
+  },
+  {
+    name: "Git",
+    icon: FaGitAlt,
+    level: 85,
+    levelText: "Avanzado",
+    category: "devops"
+  },
+
+  // AI/ML Technologies
+  {
+    name: "TensorFlow",
+    icon: SiTensorflow,
+    level: 80,
+    levelText: "Avanzado",
+    category: "ai"
+  },
+  {
+    name: "PyTorch",
+    icon: SiPytorch,
+    level: 75,
+    levelText: "Intermedio-Avanzado",
+    category: "ai"
+  },
+  {
+    name: "Keras",
+    icon: SiKeras,
+    level: 80,
+    levelText: "Avanzado",
+    category: "ai"
+  },
+  {
+    name: "Scikit-Learn",
+    icon: SiScikitlearn,
+    level: 85,
+    levelText: "Avanzado",
+    category: "ai"
+  },
+  {
+    name: "LangChain",
+    icon: SiLangchain,
+    level: 80,
+    levelText: "Avanzado",
+    category: "ai"
+  },
+  {
+    name: "Ollama",
+    icon: SiOllama,
+    level: 85,
+    levelText: "Avanzado",
+    category: "ai"
+  },
+  {
+    name: "Hugging Face",
+    icon: SiHuggingface,
+    level: 75,
+    levelText: "Intermedio-Avanzado",
+    category: "ai"
+  },
+
+  // Automation
+  {
+    name: "n8n",
+    icon: GiArtificialIntelligence,
+    level: 80,
+    levelText: "Avanzado",
+    category: "automation"
   },
 ];

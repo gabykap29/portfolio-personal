@@ -11,7 +11,7 @@ function Contact() {
               <div className="contact-icon">📧</div>
               <div className="contact-detail">
                 <h3>Email</h3>
-                <p>gabriel@example.com</p>
+                <p>gabriacos@gmail.com</p>
               </div>
             </div>
             
@@ -19,7 +19,7 @@ function Contact() {
               <div className="contact-icon">🔗</div>
               <div className="contact-detail">
                 <h3>LinkedIn</h3>
-                <p>linkedin.com/in/gabrielacosta</p>
+                <p>linkedin.com/in/gabriel-acosta-5495b5166</p>
               </div>
             </div>
             
@@ -27,7 +27,7 @@ function Contact() {
               <div className="contact-icon">💻</div>
               <div className="contact-detail">
                 <h3>GitHub</h3>
-                <p>github.com/gabrielacosta</p>
+                <p>github.com/gabykap29</p>
               </div>
             </div>
             
@@ -35,7 +35,7 @@ function Contact() {
               <div className="contact-icon">📱</div>
               <div className="contact-detail">
                 <h3>Teléfono</h3>
-                <p>+34 123 456 789</p>
+                <p>+549 3704 249490</p>
               </div>
             </div>
           </div>

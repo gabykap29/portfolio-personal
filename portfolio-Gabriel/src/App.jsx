@@ -56,7 +56,6 @@ function App() {
           <Hero />
           <About />
           <Projects projects={projects} />
-          <Skills />
           <Technologies technologies={technologies} />
           <Contact />
         </div>
