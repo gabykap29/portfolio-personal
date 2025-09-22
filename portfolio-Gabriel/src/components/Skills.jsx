@@ -87,6 +87,14 @@ function Skills() {
                 <div className="skill-icon">📊</div>
                 <span className="skill-name">Pandas</span>
               </div>
+              <div className="skill-item">
+                <div className="skill-icon">🔥</div>
+                <span className="skill-name">PyTorch</span>
+              </div>
+              <div className="skill-item">
+                <div className="skill-icon">🔗</div>
+                <span className="skill-name">N8N</span>
+              </div>
             </div>
           </div>
         </div>

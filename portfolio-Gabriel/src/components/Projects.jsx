@@ -96,18 +96,6 @@ function Projects({ projects }) {
                       <span>Código</span>
                     </a>
                   )}
-                  {project.demo && (
-                    <a 
-                      href={project.demo} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="project-link-modern demo"
-                      aria-label={`Ver demo del proyecto ${project.title}`}
-                    >
-                      <div className="link-icon-modern" aria-hidden="true">🚀</div>
-                      <span>Demo</span>
-                    </a>
-                  )}
                 </div>
                 
                 <div className="project-arrow" aria-hidden="true">
