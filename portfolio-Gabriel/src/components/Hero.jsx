@@ -51,7 +51,93 @@ function Hero() {
   return (
     <section id="home" className="hero" aria-label="Sección de inicio">
       <div className="hero-bg-gradient" aria-hidden="true"></div>
-      <div className="container">
+      
+      {/* Diseño para móvil */}
+      <div className="mobile-hero-wrapper">
+        <div className="mobile-floating-elements">
+          <div className="floating-circle floating-circle-1"></div>
+          <div className="floating-circle floating-circle-2"></div>
+          <div className="floating-circle floating-circle-3"></div>
+        </div>
+        
+        <div className="mobile-hero-card">
+          <div className="mobile-profile-section">
+            <div className="mobile-avatar">
+              <img src="/1735154832008.jpeg" alt="Foto de Gabriel Acosta" className="avatar-image" loading="lazy" />
+              <div className="avatar-ring"></div>
+            </div>
+            <div className="mobile-profile-info">
+              <h1 className="mobile-profile-name">Gabriel Acosta</h1>
+              <h2 className="mobile-profile-role">AI Developer</h2>
+            </div>
+            <div className="mobile-status-indicator">
+              <span className="status-dot"></span>
+              <span className="status-text">Disponible para proyectos</span>
+            </div>
+          </div>
+          
+          <div className="mobile-title-section">
+            <h1 className="mobile-hero-title">
+              <span className="title-line">Gabriel</span>
+              <span className="title-line">Acosta</span>
+            </h1>
+            <div className="mobile-role-tag">
+              <span className="role-icon">🚀</span>
+              <span className="role-text">AI Developer</span>
+            </div>
+          </div>
+          
+          <div className="mobile-skills-carousel">
+            <div className="skills-track">
+              <span className="skill-pill">TypeScript</span>
+              <span className="skill-pill">React</span>
+              <span className="skill-pill">Node.js</span>
+              <span className="skill-pill">Python</span>
+              <span className="skill-pill">GO</span>
+              <span className="skill-pill">AI/ML</span>
+            </div>
+          </div>
+          
+          <div className="mobile-description">
+            <p>Creando soluciones tecnológicas innovadoras con <strong>experiencias únicas</strong></p>
+          </div>
+          
+          <div className="mobile-actions">
+            <a href="#projects" className="mobile-btn mobile-btn-primary">
+              <span className="btn-icon">⚡</span>
+              <span>Ver Trabajo</span>
+            </a>
+            <a href="#contact" className="mobile-btn mobile-btn-secondary">
+              <span className="btn-icon">💬</span>
+              <span>Hablemos</span>
+            </a>
+          </div>
+        </div>
+        
+        <div className="mobile-code-snippet">
+          <div className="snippet-header">
+            <div className="snippet-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span className="snippet-title">quick_intro.js</span>
+          </div>
+          <div className="snippet-content">
+            <div className="snippet-line">
+              <span className="line-number">1</span>
+              <span className="code">const dev = new Developer();</span>
+            </div>
+            <div className="snippet-line">
+              <span className="line-number">2</span>
+              <span className="code">dev.passion = "innovation";</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Diseño original para desktop */}
+      <div className="container desktop-hero">
         <div className={`hero-content ${isVisible ? 'fade-in' : ''}`}>
           <h1 className="hero-title">Gabriel Acosta</h1>
           <h2 className="hero-subtitle">AI Developer</h2>
