@@ -1059,8 +1059,8 @@
 .profile-metrics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 0 40px 40px 40px;
+  gap: 30px;
+  padding: 40px 40px 40px 40px;
   border-top: 1px solid rgba(139, 92, 246, 0.1);
   background: rgba(0, 0, 0, 0.2);
 }
