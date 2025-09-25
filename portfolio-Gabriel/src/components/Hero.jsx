@@ -99,7 +99,7 @@ function Hero() {
           </div>
           
           <div className="mobile-description">
-            <p>Creando soluciones tecnológicas innovadoras con <strong>experiencias únicas</strong></p>
+            <p>Impulsando <strong>innovación en IA</strong> desde el desarrollo backend y la docencia</p>
           </div>
           
           <div className="mobile-actions">
