@@ -111,16 +111,23 @@ function About() {
             <h3 className="bio-title">Mi Historia</h3>
             <div className="bio-content">
               <p>
-                Soy un <span className="highlight-text">desarrollador apasionado</span> por crear soluciones tecnológicas 
+                Soy un <span className="highlight-text">desarrollador backend</span> apasionado por crear soluciones tecnológicas 
                 que resuelvan problemas reales. Mi enfoque combina <span className="highlight-text">creatividad técnica</span> 
-                con una sólida comprensión de las necesidades del usuario.
+                con una visión práctica orientada al impacto.
               </p>
               <p>
-                Con <span className="highlight-text">3 años de experiencia</span>, mi trayectoria abarca desde el desarrollo 
-                frontend con React, hasta backend con Node.js y Python. Actualmente me estoy 
-                <span className="highlight-text">especializando en Machine Learning, Deep Learning y Agentes de IA</span>, 
-                aplicando estas tecnologías para crear soluciones innovadoras.
+                Con <span className="highlight-text">más de 3 años de experiencia</span>, he trabajado en proyectos que van 
+                desde el desarrollo web con React hasta la creación de sistemas backend escalables con 
+                <span className="highlight-text">Go, Python y TypeScript</span>. Actualmente me <span className="highlight-text">
+                especializo en IA aplicada</span>, explorando Machine Learning, Deep Learning y el diseño de 
+                <span className="highlight-text">Agentes de IA y sistemas RAG</span>, integrados en proyectos reales.
               </p>
+              <p>
+                Además, soy <span className="highlight-text">Profesor Titular</span> en la Tecnicatura Superior en Desarrollo de 
+                Software Multiplataforma (Instituto Politécnico Formosa), donde enseño <span className="highlight-text">
+                Python para Ciencia de Datos</span> e <span className="highlight-text">Inteligencia Artificial</span>.
+              </p>
+
             </div>
           </div>
           

@@ -142,7 +142,8 @@ function Hero() {
           <h1 className="hero-title">Gabriel Acosta</h1>
           <h2 className="hero-subtitle">AI Developer</h2>
           <p className="hero-description">
-            Especializado en crear soluciones tecnológicas innovadoras con enfoque en experiencias de usuario excepcionales.
+            Impulsando <strong>innovación en IA</strong> desde el desarrollo backend y la docencia
+
           </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary" aria-label="Ver mis proyectos">
